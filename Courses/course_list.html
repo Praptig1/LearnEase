@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Courses</title>
+    <link rel="stylesheet" href="background.css">
+    <style>
+        /* CSS for animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            animation: fadeIn 1s ease-in-out;
+            text-align: center; 
+            margin-top: 50px;
+        }
+
+        .course-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            gap: 20px; 
+        }
+
+        .course-list li {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+            transition: transform 0.3s ease;
+            width: 200px; 
+        }
+
+        .course-list li:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); 
+        }
+
+        .course-list li a {
+            text-decoration: none; 
+            color: #333; 
+            font-weight: bold; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>What do you want to learn today?</h1>
+        <ul class="course-list">
+            <li><a href="course1.html">Science</a></li>
+            <li><a href="course2.html">Math</a></li>
+            <li><a href="course3.html">English</a></li>
+            <li><a href="course4.html">Software</a></li>
+            <li><a href="course5.html">Chinese</a></li>
+            <li><a href="course6.html">French</a></li>
+            <li><a href="course7.html">Music</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
+
